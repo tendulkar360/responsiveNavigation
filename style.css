@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    background: url('https://source.unsplash.com/1600x900/?programming,code,laptop,white-background');
+}
+
+.navbar {
+    background-color: rgb(0,0,0 , .4);
+    height: 45px;
+    position: sticky;
+    top: 0;
+}
+
+
+.navbar ul {
+    display: flex;
+    float: right;
+    margin: 7px 20px;
+}
+
+.navbar ul li {
+    padding: 5px;
+    margin-right: 5px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navbar ul li:hover {
+   border-bottom: 3px solid blue;
+}
+
+.navbarText {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 22px;
+    color: rgb(172, 255, 117);
+    display: inline-block;
+    margin: 6px 10px;
+}
+
+section {
+    height: 150vh;
+}
+
+.active.active {
+    border-bottom: 3px solid blue;
+}
+
+.hamburg {
+    width: 20px;
+    float: right;
+    margin: 10px 10px;
+    display: none;
+}
+
+@media(max-width: 768px){
+
+    .navbar-resp {
+        background-color: rgb(0,0,0 , .8);
+        height: 340px;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbarText-resp {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 1000;
+        font-size: 28px;
+        color: rgb(172, 255, 117);
+        display: inline-block;
+        margin: 18px 16px;
+        position: absolute;
+    }
+
+    .navbarText {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 1000;
+        font-size: 24px;
+        color: rgb(172, 255, 117);
+        display: inline-block;
+        margin: 4px 10px;
+        position: absolute;
+    }
+
+    .navbar ul {
+        display: flex;
+        float: right;
+        flex-direction: column;
+        float: left;
+        margin: 90px 20px;
+    }
+
+    .navbar ul li {
+        padding: 5px;
+        margin: 10px;
+        list-style: none;
+    }
+
+    .navbar ul li:hover {
+        background-color: grey;
+    }
+
+    .navbar ul li .a-resp { 
+        font-size: 20px;
+        color: #fff;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+    }
+
+    a {
+        display: none;
+    }
+
+    #hamburg {
+        display: block;
+    }
+}
